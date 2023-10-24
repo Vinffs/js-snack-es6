@@ -61,3 +61,7 @@ const students = [
     grade: "84",
   },
 ];
+
+const studentNames = students.map((student) => student.fullName.toUpperCase());
+
+console.log(students, studentNames);
