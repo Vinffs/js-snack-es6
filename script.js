@@ -66,4 +66,9 @@ const studentNames = students.map((student) => student.fullName.toUpperCase());
 
 const overSeventy = students.filter((student) => student.grade > 70);
 
-console.log(students, studentNames, overSeventy);
+const thirdList = students.filter(
+  (student) => student.grade > 70 && student.id > 120
+);
+
+console.log(students, studentNames);
+console.log(overSeventy, thirdList);
