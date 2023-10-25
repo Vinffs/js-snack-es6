@@ -136,3 +136,8 @@ const teams = [
     foulReceived: "0",
   },
 ];
+
+teams.forEach((team) => (team.goals = getRndInteger(1, 20)));
+teams.forEach((team) => (team.foulReceived = getRndInteger(1, 10)));
+
+console.log(teams);
