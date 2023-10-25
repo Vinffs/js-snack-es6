@@ -95,7 +95,7 @@ const bicycles = [
 ];
 
 const bike = bicycles[0];
-console.log(bike);
+// console.log(bike);
 
 bicycles.forEach((currentBike) => {
   if (parseInt(currentBike.weight) < parseInt(bike.weight)) {
@@ -104,5 +104,35 @@ bicycles.forEach((currentBike) => {
   }
 });
 
-console.log(`
-La bici più leggera è la ${bike.name} con un peso di ${bike.weight} kg.`);
+// console.log(`
+// La bici più leggera è la ${bike.name} con un peso di ${bike.weight} kg.`);
+
+// SNACK 4
+
+const teams = [
+  {
+    name: "Milan",
+    goals: "0",
+    foulReceived: "0",
+  },
+  {
+    name: "Inter",
+    goals: "0",
+    foulReceived: "0",
+  },
+  {
+    name: "Juventus",
+    goals: "0",
+    foulReceived: "0",
+  },
+  {
+    name: "Roma",
+    goals: "0",
+    foulReceived: "0",
+  },
+  {
+    name: "Napoli",
+    goals: "0",
+    foulReceived: "0",
+  },
+];
