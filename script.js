@@ -137,8 +137,10 @@ const teams = [
   },
 ];
 
-teams.forEach((team) => (team.goals = getRndInteger(1, 20)));
-teams.forEach((team) => (team.foulReceived = getRndInteger(1, 10)));
+teams.forEach((team) => {
+  team.goals = getRndInteger(1, 20);
+  team.foulReceived = getRndInteger(1, 10);
+});
 
 console.log(teams);
 
