@@ -72,3 +72,24 @@ const thirdList = students.filter(
 
 console.log(students, studentNames);
 console.log(overSeventy, thirdList);
+
+// SNACK 3
+
+const bicycles = [
+  {
+    name: "Giant",
+    weight: "6",
+  },
+  {
+    name: "Bianchi",
+    weight: "8",
+  },
+  {
+    name: "Pinnarello",
+    weight: "7",
+  },
+  {
+    name: "Trek",
+    weight: "10",
+  },
+];
