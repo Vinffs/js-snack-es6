@@ -20,7 +20,7 @@ const toPrint = invitedVip.map((name, index) => ({
   place: index + 1,
 }));
 
-console.log(toPrint);
+// console.log(toPrint);
 
 // SNACK 2
 
@@ -70,19 +70,19 @@ const thirdList = students.filter(
   (student) => student.grade > 70 && student.id > 120
 );
 
-console.log(students, studentNames);
-console.log(overSeventy, thirdList);
+// console.log(students, studentNames);
+// console.log(overSeventy, thirdList);
 
 // SNACK 3
 
 const bicycles = [
   {
-    name: "Giant",
-    weight: "6",
-  },
-  {
     name: "Bianchi",
     weight: "8",
+  },
+  {
+    name: "Giant",
+    weight: "6",
   },
   {
     name: "Pinnarello",
@@ -93,3 +93,9 @@ const bicycles = [
     weight: "10",
   },
 ];
+
+const { weight } = { weight: bicycles.map((bike) => parseInt(bike.weight)) };
+console.log(weight);
+
+const lightest = Math.min(...weight);
+console.log(lightest);
