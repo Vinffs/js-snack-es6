@@ -94,21 +94,15 @@ const bicycles = [
   },
 ];
 
-const { weight } = { weight: bicycles.map((bike) => bike.weight) };
-console.log(weight);
+const bike = bicycles[0];
+console.log(bike);
 
-const lightest = Math.min(...weight);
-console.log(lightest);
-
-const { name } = {
-  name: bicycles.filter((bike) =>
-    parseInt(bike.weight) === lightest ? bike.name : false
-  ),
-};
-
-console.log(name);
+bicycles.forEach((currentBike) => {
+  if (parseInt(currentBike.weight) < parseInt(bike.weight)) {
+    bike.name = currentBike.name;
+    bike.weight = currentBike.weight;
+  }
+});
 
 console.log(`
-La bici più leggera è la ${lightest.name} con un peso di ${lightest} kg.`);
-
-//
+La bici più leggera è la ${bike.name} con un peso di ${bike.weight} kg.`);
